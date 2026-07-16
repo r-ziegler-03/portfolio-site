@@ -66,16 +66,28 @@ export function ProjectCard({ project }: { project: Project }) {
         </div>
       )}
 
-      {project.repoUrl && (
-        <a
-          href={project.repoUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-4 inline-block font-mono text-sm font-medium text-accent underline underline-offset-4"
-        >
-          View on GitHub →
-        </a>
-      )}
+      <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 font-mono text-sm font-medium">
+        {project.repoUrl && (
+          <a
+            href={project.repoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-accent underline underline-offset-4"
+          >
+            View on GitHub →
+          </a>
+        )}
+        {project.demoUrl && (
+          <a
+            href={project.demoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-accent underline underline-offset-4"
+          >
+            Try the live API →
+          </a>
+        )}
+      </div>
     </article>
   );
 }
