@@ -19,7 +19,7 @@ export default function Home() {
           </h1>
           <p className="mt-4 text-lg text-muted">
             CS grad (Chapman, &apos;26) building data systems with an eye for
-            game design. I like turning raw event data into a story — whether
+            game design. I like turning raw event data into a story, whether
             that&apos;s a database schema, a query, or a level a player
             actually wants to finish.
           </p>
@@ -71,7 +71,7 @@ export default function Home() {
                 Wizard King
               </span>
               , which meant thinking constantly about the line between a
-              level that&apos;s hard and a level that&apos;s frustrating — the
+              level that&apos;s hard and a level that&apos;s frustrating: the
               exact moment a player decides to quit instead of trying again.
             </p>
             <p>
@@ -80,15 +80,15 @@ export default function Home() {
                 Game Analytics Database
               </span>{" "}
               project was my attempt to actually measure it: I planted a
-              ragequit mechanic into simulated match data — the odds of
+              ragequit mechanic into simulated match data (the odds of
               abandoning a match scale with repeated deaths to the same
-              ability — and then wrote the SQL to recover that pattern from
+              ability) and then wrote the SQL to recover that pattern from
               the data alone, without ever telling the query it was there. It
               found it: a 2.6x higher quit rate on repeat deaths.
             </p>
             <p>
-              Same underlying question — where does a player give up, and
-              why — approached first as a designer, then as a data person.
+              Same underlying question (where does a player give up, and
+              why) approached first as a designer, then as a data person.
               That combination is what I want to keep building on.
             </p>
           </div>

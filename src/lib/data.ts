@@ -25,7 +25,7 @@ export const projects: Project[] = [
       "Designed a 7-table schema modeling multiplayer match and session data, including mid-match hero-switching and ability-level event tracking.",
       "Built a Python generator producing a 23.6M-row synthetic dataset (3,000 players, ~9,900 matches) with a known ragequit mechanic baked in as ground truth.",
       "Diagnosed a production-scale performance bottleneck (per-row inserts + FK constraint checks) via pg_stat_activity, cutting generation time from a multi-hour projection to under 4 minutes.",
-      "Wrote analytical SQL — window functions, CTEs, self-joins — recovering a 2.6x ragequit correlation, cohort retention curves, and a corrected-for-confound churn analysis.",
+      "Wrote analytical SQL (window functions, CTEs, self-joins) recovering a 2.6x ragequit correlation, cohort retention curves, and a corrected-for-confound churn analysis.",
     ],
     repoUrl: "https://github.com/r-ziegler-03/game-analytics-db",
     featured: true,
@@ -36,11 +36,11 @@ export const projects: Project[] = [
     stack: ["Python"],
     period: "2026",
     summary:
-      "A minimal, file-based memory store for AI agents — markdown notes and keyword search, no vector database, no dependencies beyond the standard library.",
+      "A minimal, file-based memory store for AI agents: markdown notes and keyword search, no vector database, no dependencies beyond the standard library.",
     highlights: [
-      "Notes are plain markdown with lightweight frontmatter (title, tags, date) — retrieval is a readable scoring function, not a search engine.",
+      "Notes are plain markdown with lightweight frontmatter (title, tags, date); retrieval is a readable scoring function, not a search engine.",
       "`prime` pulls back only the notes relevant to a task and prints them as one block, ready to paste into an LLM's context, instead of dumping an entire note collection into every prompt.",
-      "Inspired by the same core idea as jaredrhod/ai-memory-vault (persistent, file-based AI memory) — built from scratch as an original implementation, credited in the README.",
+      "Inspired by the same core idea as jaredrhod/ai-memory-vault (persistent, file-based AI memory), built from scratch as an original implementation and credited in the README.",
     ],
     repoUrl: "https://github.com/r-ziegler-03/agent-memory-cli",
   },
@@ -50,7 +50,7 @@ export const projects: Project[] = [
     stack: ["C#", "Unity"],
     period: "Sep 2025 – May 2026",
     summary:
-      "A Souls-like game shipped to Steam by a 4-person team over a 9-month production cycle — placed 3rd at the IEEE GameSig development competition.",
+      "A Souls-like game shipped to Steam by a 4-person team over a 9-month production cycle, placing 3rd at the IEEE GameSig development competition.",
     highlights: [
       "Built custom 3D levels, animation systems, and combat mechanics as the team's level designer.",
       "Produced original art and audio assets end-to-end for a distinct visual and audio identity.",
