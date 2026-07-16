@@ -31,6 +31,20 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    slug: "agent-memory-cli",
+    name: "Agent Memory CLI",
+    stack: ["Python"],
+    period: "2026",
+    summary:
+      "A minimal, file-based memory store for AI agents — markdown notes and keyword search, no vector database, no dependencies beyond the standard library.",
+    highlights: [
+      "Notes are plain markdown with lightweight frontmatter (title, tags, date) — retrieval is a readable scoring function, not a search engine.",
+      "`prime` pulls back only the notes relevant to a task and prints them as one block, ready to paste into an LLM's context, instead of dumping an entire note collection into every prompt.",
+      "Inspired by the same core idea as jaredrhod/ai-memory-vault (persistent, file-based AI memory) — built from scratch as an original implementation, credited in the README.",
+    ],
+    repoUrl: "https://github.com/r-ziegler-03/agent-memory-cli",
+  },
+  {
     slug: "wizard-king",
     name: "Wizard King",
     stack: ["C#", "Unity"],
