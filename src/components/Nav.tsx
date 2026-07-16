@@ -8,17 +8,20 @@ const links = [
 
 export function Nav() {
   return (
-    <header className="sticky top-0 z-10 border-b border-zinc-200 bg-white/80 backdrop-blur dark:border-zinc-800 dark:bg-zinc-950/80">
+    <header className="sticky top-0 z-10 border-b border-accent/20 bg-bg/80 backdrop-blur">
       <nav className="mx-auto flex max-w-3xl items-center justify-between px-6 py-4">
-        <Link href="#top" className="font-semibold tracking-tight">
-          Ross Ziegler
+        <Link
+          href="#top"
+          className="font-mono text-sm tracking-widest text-accent"
+        >
+          R.ZIEGLER
         </Link>
-        <ul className="flex gap-6 text-sm text-zinc-600 dark:text-zinc-400">
+        <ul className="flex gap-6 font-mono text-xs tracking-wide text-muted">
           {links.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
-                className="transition-colors hover:text-zinc-950 dark:hover:text-zinc-50"
+                className="transition-colors hover:text-accent"
               >
                 {link.label}
               </a>

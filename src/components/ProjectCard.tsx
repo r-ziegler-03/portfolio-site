@@ -3,34 +3,32 @@ import type { Project } from "@/lib/data";
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
-    <article className="rounded-lg border border-zinc-200 p-6 dark:border-zinc-800">
+    <article className="rounded-lg border border-accent/20 p-6 transition-shadow hover:shadow-[0_0_20px_-6px_rgba(34,211,238,0.35)]">
       <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
-        <h3 className="text-lg font-semibold">{project.name}</h3>
-        <span className="text-sm text-zinc-500 dark:text-zinc-400">
-          {project.period}
-        </span>
+        <h3 className="font-mono text-lg font-semibold text-accent">
+          {project.name}
+        </h3>
+        <span className="font-mono text-xs text-muted">{project.period}</span>
       </div>
 
       <div className="mt-2 flex flex-wrap gap-2">
         {project.stack.map((tech) => (
           <span
             key={tech}
-            className="rounded-full bg-zinc-100 px-2.5 py-0.5 text-xs text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"
+            className="rounded-full border border-accent/30 px-2.5 py-0.5 font-mono text-xs text-accent-soft"
           >
             {tech}
           </span>
         ))}
       </div>
 
-      <p className="mt-4 text-zinc-700 dark:text-zinc-300">
-        {project.summary}
-      </p>
+      <p className="mt-4 text-fg/90">{project.summary}</p>
 
-      <ul className="mt-4 space-y-2 text-sm text-zinc-600 dark:text-zinc-400">
+      <ul className="mt-4 space-y-2 text-sm text-muted">
         {project.highlights.map((point) => (
           <li key={point} className="flex gap-2">
-            <span aria-hidden className="text-zinc-400 dark:text-zinc-600">
-              —
+            <span aria-hidden className="text-accent/50">
+              »
             </span>
             <span>{point}</span>
           </li>
@@ -38,7 +36,7 @@ export function ProjectCard({ project }: { project: Project }) {
       </ul>
 
       {project.youtubeId && (
-        <div className="mt-4 aspect-video overflow-hidden rounded-md">
+        <div className="mt-4 aspect-video overflow-hidden rounded-md border border-accent/20">
           <iframe
             className="h-full w-full"
             src={`https://www.youtube-nocookie.com/embed/${project.youtubeId}`}
@@ -55,7 +53,7 @@ export function ProjectCard({ project }: { project: Project }) {
           {project.screenshots.map((src) => (
             <div
               key={src}
-              className="relative aspect-video overflow-hidden rounded-md bg-zinc-100 dark:bg-zinc-800"
+              className="relative aspect-video overflow-hidden rounded-md border border-accent/20 bg-fg/5"
             >
               <Image
                 src={src}
@@ -73,7 +71,7 @@ export function ProjectCard({ project }: { project: Project }) {
           href={project.repoUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-4 inline-block text-sm font-medium text-zinc-900 underline underline-offset-4 dark:text-zinc-100"
+          className="mt-4 inline-block font-mono text-sm font-medium text-accent underline underline-offset-4"
         >
           View on GitHub →
         </a>

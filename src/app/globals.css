@@ -1,8 +1,19 @@
 @import "tailwindcss";
 
+/*
+  Retro-HUD theme: dark console background, cyan accent, monospace for
+  headings/labels only. Committed to a single (dark) look on purpose —
+  a JARVIS console doesn't have a light mode.
+*/
 @theme inline {
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-mono: var(--font-jetbrains-mono);
+
+  --color-bg: #0a0e14;
+  --color-fg: #dce4ee;
+  --color-muted: #8a99ac;
+  --color-accent: #22d3ee;
+  --color-accent-soft: #67e8f9;
 }
 
 html {

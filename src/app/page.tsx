@@ -11,19 +11,22 @@ export default function Home() {
           id="top"
           className="mx-auto max-w-3xl px-6 py-20 sm:py-28"
         >
-          <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
+          <p className="font-mono text-xs tracking-widest text-accent/70">
+            {"// PORTFOLIO_v1"}
+          </p>
+          <h1 className="mt-2 font-mono text-4xl font-semibold tracking-tight text-accent sm:text-5xl">
             Ross Ziegler
           </h1>
-          <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-400">
+          <p className="mt-4 text-lg text-muted">
             CS grad (Chapman, &apos;26) building data systems with an eye for
             game design. I like turning raw event data into a story — whether
             that&apos;s a database schema, a query, or a level a player
             actually wants to finish.
           </p>
-          <div className="mt-8 flex flex-wrap gap-4 text-sm font-medium">
+          <div className="mt-8 flex flex-wrap gap-4 font-mono text-sm">
             <a
               href={contact.resumeUrl}
-              className="rounded-full bg-zinc-900 px-5 py-2.5 text-white transition-colors hover:bg-zinc-700 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-300"
+              className="rounded border border-accent bg-accent/10 px-5 py-2.5 text-accent transition-colors hover:bg-accent/20"
             >
               Resume
             </a>
@@ -31,7 +34,7 @@ export default function Home() {
               href={contact.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full border border-zinc-300 px-5 py-2.5 transition-colors hover:bg-zinc-50 dark:border-zinc-700 dark:hover:bg-zinc-900"
+              className="rounded border border-accent/30 px-5 py-2.5 text-fg/90 transition-colors hover:border-accent/60"
             >
               GitHub
             </a>
@@ -39,7 +42,7 @@ export default function Home() {
               href={contact.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full border border-zinc-300 px-5 py-2.5 transition-colors hover:bg-zinc-50 dark:border-zinc-700 dark:hover:bg-zinc-900"
+              className="rounded border border-accent/30 px-5 py-2.5 text-fg/90 transition-colors hover:border-accent/60"
             >
               LinkedIn
             </a>
@@ -47,7 +50,9 @@ export default function Home() {
         </section>
 
         <section id="projects" className="mx-auto max-w-3xl px-6 py-16">
-          <h2 className="text-2xl font-semibold tracking-tight">Projects</h2>
+          <h2 className="font-mono text-sm tracking-widest text-accent/70">
+            {"[ PROJECTS ]"}
+          </h2>
           <div className="mt-8 space-y-6">
             {projects.map((project) => (
               <ProjectCard key={project.slug} project={project} />
@@ -56,13 +61,13 @@ export default function Home() {
         </section>
 
         <section id="interests" className="mx-auto max-w-3xl px-6 py-16">
-          <h2 className="text-2xl font-semibold tracking-tight">
-            Why games and data
+          <h2 className="font-mono text-sm tracking-widest text-accent/70">
+            {"[ WHY GAMES AND DATA ]"}
           </h2>
-          <div className="mt-6 space-y-4 text-zinc-700 dark:text-zinc-300">
+          <div className="mt-6 space-y-4 text-fg/90">
             <p>
               I spent my capstone as the level designer on{" "}
-              <span className="font-medium text-zinc-900 dark:text-zinc-100">
+              <span className="font-medium text-accent-soft">
                 Wizard King
               </span>
               , which meant thinking constantly about the line between a
@@ -71,7 +76,7 @@ export default function Home() {
             </p>
             <p>
               That question stuck with me, so the{" "}
-              <span className="font-medium text-zinc-900 dark:text-zinc-100">
+              <span className="font-medium text-accent-soft">
                 Game Analytics Database
               </span>{" "}
               project was my attempt to actually measure it: I planted a
@@ -90,12 +95,14 @@ export default function Home() {
         </section>
 
         <section id="contact" className="mx-auto max-w-3xl px-6 py-16">
-          <h2 className="text-2xl font-semibold tracking-tight">Contact</h2>
-          <p className="mt-4 text-zinc-700 dark:text-zinc-300">
+          <h2 className="font-mono text-sm tracking-widest text-accent/70">
+            {"[ CONTACT ]"}
+          </h2>
+          <p className="mt-4 text-fg/90">
             Best reached at{" "}
             <a
               href={`mailto:${contact.email}`}
-              className="font-medium underline underline-offset-4"
+              className="font-medium text-accent underline underline-offset-4"
             >
               {contact.email}
             </a>
@@ -104,7 +111,7 @@ export default function Home() {
               href={contact.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium underline underline-offset-4"
+              className="font-medium text-accent underline underline-offset-4"
             >
               LinkedIn
             </a>
@@ -112,7 +119,7 @@ export default function Home() {
           </p>
         </section>
       </main>
-      <footer className="mx-auto w-full max-w-3xl px-6 py-10 text-sm text-zinc-500 dark:text-zinc-400">
+      <footer className="mx-auto w-full max-w-3xl px-6 py-10 font-mono text-xs text-muted">
         © {new Date().getFullYear()} Ross Ziegler
       </footer>
     </>
