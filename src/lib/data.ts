@@ -42,8 +42,8 @@ export const projects: Project[] = [
     highlights: [
       "Notes are plain markdown with lightweight frontmatter (title, tags, date); retrieval is a readable scoring function, not a search engine.",
       "`prime` pulls back only the notes relevant to a task and prints them as one block, ready to paste into an LLM's context, instead of dumping an entire note collection into every prompt.",
-      "Same idea, implemented twice: the CLI is Python, and this site exposes the same notes as a small REST API (GET /api/notes, ?tag= filtering, GET /api/notes/:slug with a real 404) — try the live link below.",
-      "Inspired by the same core idea as jaredrhod/ai-memory-vault (persistent, file-based AI memory), built from scratch as an original implementation and credited in the README.",
+      "Same idea, implemented twice: the CLI is Python, and this site exposes the same notes as a small REST API, feel free to try the live link below.",
+      "Inspired by the same core idea as jaredrhod/ai-memory-vault (persistent, file-based AI memory).",
     ],
     repoUrl: "https://github.com/r-ziegler-03/agent-memory-cli",
     demoUrl: "/api/notes",

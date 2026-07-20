@@ -18,10 +18,9 @@ export default function Home() {
             Ross Ziegler
           </h1>
           <p className="mt-4 text-lg text-muted">
-            CS grad (Chapman, &apos;26) building data systems with an eye for
-            game design. I like turning raw event data into a story, whether
-            that&apos;s a database schema, a query, or a level a player
-            actually wants to finish.
+            CS grad (Chapman, &apos;26) focused on data systems and game design. I enjoy 
+            seeing data and tables come together into one cohesive system. Game design is another passion of mine
+            where I get to merge my love for gaming with software development.
           </p>
           <div className="mt-8 flex flex-wrap gap-4 font-mono text-sm">
             <a

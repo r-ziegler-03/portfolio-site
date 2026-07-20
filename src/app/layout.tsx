@@ -15,7 +15,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Ross Ziegler",
   description:
-    "Portfolio of Ross Ziegler, CS grad building data systems with an eye for game design.",
+    "Portfolio of Ross Ziegler, with a degree in Computer Science. This is a collection of my most recent and notable projects.",
 };
 
 export default function RootLayout({
