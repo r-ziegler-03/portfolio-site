@@ -1,6 +1,6 @@
 # Portfolio Site
 
-Ross Ziegler's personal portfolio — projects and the throughline connecting them.
+Ross Ziegler's personal portfolio,  projects and the gateway to all other personal sites.
 Built with Next.js (App Router), TypeScript, and Tailwind CSS.
 
 ## Structure
